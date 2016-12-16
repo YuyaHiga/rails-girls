@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Bulletin Boards1s</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Picture</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bulletin_boards1s.each do |bulletin_boards1| %>
+      <tr>
+        <td><%= bulletin_boards1.name %></td>
+        <td><%= bulletin_boards1.description %></td>
+        <td><%= bulletin_boards1.picture %></td>
+        <td><%= link_to 'Show', bulletin_boards1 %></td>
+        <td><%= link_to 'Edit', edit_bulletin_boards1_path(bulletin_boards1) %></td>
+        <td><%= link_to 'Destroy', bulletin_boards1, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bulletin Boards1', new_bulletin_boards1_path %>
