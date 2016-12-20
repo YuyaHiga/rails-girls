@@ -1,1 +1,0 @@
-json.partial! "bulletin_boards1s/bulletin_boards1", bulletin_boards1: @bulletin_boards1

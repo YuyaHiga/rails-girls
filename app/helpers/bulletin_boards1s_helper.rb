@@ -1,2 +1,0 @@
-module BulletinBoards1sHelper
-end

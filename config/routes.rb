@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
+  resources :bulleting_boards
+  devise_for :users
+  resources :comments
   get 'pages/info'
 
-  root to: redirect('/Bulletin_boards')
-
-resources :bulletin_boards1s
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root to: redirect('/bulleting_boards')
 end

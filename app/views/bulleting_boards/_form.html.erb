@@ -1,10 +1,10 @@
-<%= form_for(bulletin_boards1) do |f| %>
-  <% if bulletin_boards1.errors.any? %>
+<%= form_for(bulleting_board) do |f| %>
+  <% if bulleting_board.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(bulletin_boards1.errors.count, "error") %> prohibited this bulletin_boards1 from being saved:</h2>
+      <h2><%= pluralize(bulleting_board.errors.count, "error") %> prohibited this bulleting_board from being saved:</h2>
 
       <ul>
-      <% bulletin_boards1.errors.full_messages.each do |message| %>
+      <% bulleting_board.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= f.label :picture %>
-    <%= f.file_field :picture %>
+    <%= f.text_field :picture %>
   </div>
 
   <div class="actions">

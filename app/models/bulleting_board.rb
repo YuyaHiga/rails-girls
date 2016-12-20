@@ -1,3 +1,3 @@
-class BulletinBoards1 < ApplicationRecord
+class BulletingBoard < ApplicationRecord
   mount_uploader :picture, PictureUploader
 end

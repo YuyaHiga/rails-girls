@@ -1,0 +1,1 @@
+json.array! @bulleting_boards, partial: 'bulleting_boards/bulleting_board', as: :bulleting_board

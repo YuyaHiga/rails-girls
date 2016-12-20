@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bulleting_board.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @bulleting_board.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @bulleting_board.picture %>
+</p>
+
+<%= link_to 'Edit', edit_bulleting_board_path(@bulleting_board) %> |
+<%= link_to 'Back', bulleting_boards_path %>

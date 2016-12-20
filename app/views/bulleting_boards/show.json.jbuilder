@@ -1,0 +1,1 @@
+json.partial! "bulleting_boards/bulleting_board", bulleting_board: @bulleting_board
